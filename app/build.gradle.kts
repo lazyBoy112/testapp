@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.sanglv.testapp"
-        minSdk = 24
+        minSdk = 31
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -43,9 +43,10 @@ android {
 dependencies {
     implementation ("androidx.appcompat:appcompat:1.4.1")
     implementation("androidx.media3:media3-common:1.4.1")
-    implementation("androidx.media3:media3-session:1.4.1 ")
+    implementation("androidx.media3:media3-session:1.4.1")
     implementation("androidx.media3:media3-exoplayer:1.4.1")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
+    implementation("androidx.media:media:1.6.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
