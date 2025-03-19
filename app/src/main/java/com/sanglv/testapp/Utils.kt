@@ -1,0 +1,17 @@
+package com.sanglv.testapp
+import android.view.View
+import androidx.core.view.isVisible
+
+class Utils {
+    companion object {
+        fun View.hide() {
+            isVisible = false
+        }
+
+        fun View.show() {
+            isVisible = true
+        }
+
+        const val CURRENT_POSITION = "CURRENT_POSITION"
+    }
+}

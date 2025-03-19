@@ -35,12 +35,17 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true
+        viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
-
+    implementation ("androidx.appcompat:appcompat:1.4.1")
+    implementation("androidx.media3:media3-common:1.4.1")
+    implementation("androidx.media3:media3-session:1.4.1 ")
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
